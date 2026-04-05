@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skills</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+        }
+
+        .container {
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #38bdf8;
+            margin-bottom: 40px;
+        }
+
+        .skills-box {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .skill {
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .skill-name {
+            margin-bottom: 5px;
+        }
+
+        .bar {
+            background: #334155;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 10px;
+            background: #38bdf8;
+            width: 0;
+            animation: load 2s forwards;
+        }
+
+        .html { width: 90%; }
+        .css { width: 85%; }
+        .java { width: 75%; }
+
+        @keyframes load {
+            from { width: 0; }
+        }
+
+        .btn {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 10px 20px;
+            background: #38bdf8;
+            color: black;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+            transform: scale(1.05);
+        }
+        .nav-btn {
+            text-decoration: none;   /* removes underline */
+            color: white;            /* text color */
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: 0.3s;
+            background-color: #38bdf8;
+        }
+
+        .nav-btn:hover {
+            background: blueviolet;     /* button effect */
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>My Skills</h1>
+
+    <div class="skills-box">
+
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="bar">
+                <div class="progress html"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="bar">
+                <div class="progress css"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-name">Java</div>
+            <div class="bar">
+                <div class="progress java"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="portfolio.html" class="nav-btn">BACK TO HOME</a>
+</div>
+
+</body>
+</html>

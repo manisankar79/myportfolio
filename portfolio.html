@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background: rgba(0,0,0,0.6);
+            position: sticky;
+            top: 0;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li {
+            cursor: pointer;
+        }
+        .nav-btn {
+            text-decoration: none;   
+            color: white;            
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .nav-btn:hover {
+            background: #38bdf8;    
+            color: black;
+        }
+
+        header {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+
+        header h1 {
+            font-size: 50px;
+        }
+
+        header span {
+            color: #38bdf8;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #cbd5f5;
+        }
+
+        section {
+            padding: 60px 50px;
+        }
+
+        .section-title {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        .skills, .projects {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 15px;
+            flex: 1 1 200px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: #334155;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        @media(max-width: 768px) {
+            header h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h2>Mani Sankar</h2>
+    <ul>
+        <li><a href="#" class="nav-btn">Home</a></li>
+        <li><a href="about.html" class="nav-btn">About</a></li>
+        <li><a href="skills.html" class="nav-btn">Skills</a></li>
+        <li><a href="contact.html" class="nav-btn">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Hi, I'm <span>Mani Sankar</span></h1>
+    <p>Web Developer | HTML | CSS | Java</p>
+</header>
+
+<section>
+    <h2 class="section-title">About Me</h2>
+    <p>I am a passionate web development student who enjoys creating modern and responsive websites. I am eager to learn and grow in the software industry.</p>
+</section>
+
+<section>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">Java</div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal portfolio using HTML & CSS</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Contact</h2>
+    <p>Email:manishankarbodepudi05@gmail.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Mani Sankar</p>
+</footer>
+
+</body>
+</html>
